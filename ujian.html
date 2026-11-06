@@ -1,190 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="style/ujian.css" type="text/css">
+    <meta name="description" content="Biodata Fadhil Faith Al Abrisam Dewanto, siswa RPL SMKN 1 Mejayan: riwayat pendidikan, pengalaman organisasi, dan kontak.">
+    <meta name="theme-color" content="#26302f">
+    <link rel="icon" href="image/smk.png" type="image/png">
+    <title>Biodata | Fadhil Faith Al Abrisam Dewanto</title>
     <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
-    <script src="style/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style/ujian.css" type="text/css">
 </head>
-<body>
-  <header id="navbar">  
-    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Biodata</a>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="skip-link" href="#pendidikan">Lewati ke konten utama</a>
+
+  <header id="navbar">
+    <nav id="mainNav" class="navbar navbar-expand-md navbar-dark fixed-top site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Biodata</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Buka menu navigasi">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white text-center" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-center" href="#pendidikan">Pendidikan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-center" href="#pekerjaan">Pengalaman</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white text-center" href="#kontak">Kontak</a>
-            </li>
+          <ul class="navbar-nav ms-auto gap-md-1">
+            <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pekerjaan">Pengalaman</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <section id="home">
-    <img src="image/bcgrnd.png" alt="Gambar Laboratorium Komputer">
-    <div id="logoBanner">
-      <img src="image/pp saya.png" alt="Gambar Profil">
-      <h1><span></span></h1>
-      <p><b>Siswa RPL di SMKN 1 Mejayan</b></p>
-    </div>
-  </section>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-media">
+        <img src="image/bcgrnd.png" alt="Suasana laboratorium komputer di SMKN 1 Mejayan">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-  <article id="pendidikan">
-    <div class="row">
-      <b><h2>Riwayat Pendidikan</h2></b>
-      <div class="col-sm-3">
-        <img src="image/esdeh.png">
-        <p><h3>SD</h3></p>
-        <p>Lulusan SDN Banjarsari 02 angkatan tahun 2015-2021</p>
-      </div>
-      <div class="col-sm-3">
-        <img src="image/smplogo.png">
-        <p><h3>SMP</h3></p>
-        <p>Lulusan SMPN 1 Nglames angkatan tahun 2021-2023</p>
-      </div>
-      <div class="col-sm-3">
-        <img src="image/smk.png">
-        <p><h3>SMK</h3></p>
-        <p>Belum Lulus - Masih Bersekolah</p>
-      </div>
-    </div>
-  </article>
+      <div class="container hero-content">
+        <img class="hero-avatar" src="image/pp%20saya.png" alt="Foto profil Fadhil Faith Al Abrisam Dewanto" width="220" height="220">
 
-  <article id="pekerjaan">
-    <b><h2 class="mb-4">Riwayat Pengalaman</h2></b>
-    <div id="accordion">
-      <div class="card mb-3 shadow-sm border-0">
-        <div class="card-header bg-primary text-white d-flex align-items-center">
-          <img src="image/smk.png" alt="SMK" width="32" height="32" class="me-2">
-          <a class="btn text-white flex-grow-1 text-start" data-bs-toggle="collapse" href="#collapseOne">
-            <span class="fw-bold">2023 - Sekarang</span> &mdash; <span class="ms-2">SMKN 1 Mejayan</span>
-          </a>
+        <p class="hero-greeting">
+          <span class="visually-hidden">Selamat datang. </span>
+          <span class="rotator" aria-hidden="true">
+            <span>Selamat datang</span>
+            <span>Halo, saya Fadhil</span>
+            <span>Terima kasih sudah mampir</span>
+          </span>
+        </p>
+
+        <h1>Fadhil Faith Al Abrisam Dewanto</h1>
+        <p class="hero-subtitle">Siswa RPL di SMKN 1 Mejayan</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#pendidikan">Lihat Biodata</a>
+          <a class="btn btn-outline-light" href="index.html">Portofolio</a>
         </div>
-        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-          <div class="card-body">
-            <ul>
-              <li>Siswa aktif di jurusan <b>Rekayasa Perangkat Lunak (RPL)</b>.</li>
-              <li>Aktif di berbagai organisasi: <b>OSIS</b>, <b>Remas</b>, dan <b>Pramuka</b>.</li>
-              <li>Mengembangkan keterampilan teknologi dan kepemimpinan.</li>
+      </div>
+    </section>
+
+    <article id="pendidikan" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-kicker">Perjalanan Belajar</span>
+          <h2>Riwayat Pendidikan</h2>
+          <p class="section-desc">Jenjang pendidikan yang sudah dan sedang saya tempuh.</p>
+        </header>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-4">
+            <div class="edu-card">
+              <img src="image/esdeh.png" alt="Logo SDN Banjarsari 02" width="120" height="120" loading="lazy">
+              <h3>SD</h3>
+              <span class="edu-years">2015 &ndash; 2021</span>
+              <p>Lulusan SDN Banjarsari 02, Kecamatan Madiun, Kabupaten Madiun.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="edu-card">
+              <img src="image/smplogo.png" alt="Logo SMPN 1 Nglames" width="120" height="120" loading="lazy">
+              <h3>SMP</h3>
+              <span class="edu-years">2021 &ndash; 2023</span>
+              <p>Lulusan SMPN 1 Nglames, Kecamatan Madiun, Kabupaten Madiun.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="edu-card">
+              <img src="image/smk.png" alt="Logo SMKN 1 Mejayan" width="120" height="120" loading="lazy">
+              <h3>SMK</h3>
+              <span class="edu-years">2023 &ndash; Sekarang</span>
+              <p>SMKN 1 Mejayan, jurusan Rekayasa Perangkat Lunak. Masih bersekolah.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="pekerjaan" class="section section-alt">
+      <div class="container">
+        <h2 class="experience-title text-center">Riwayat Pengalaman</h2>
+
+        <div id="accordion" class="experience-cards">
+          <div class="card mb-3 shadow-sm border-0">
+            <div class="card-header bg-primary text-white d-flex align-items-center">
+              <img src="image/smk.png" alt="" width="32" height="32" class="me-2">
+              <button class="btn text-white flex-grow-1 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="fw-bold">2023 - Sekarang</span> &mdash; <span class="ms-2">SMKN 1 Mejayan</span>
+              </button>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Siswa aktif di jurusan <b>Rekayasa Perangkat Lunak (RPL)</b>.</li>
+                  <li>Aktif di berbagai organisasi: <b>OSIS</b>, <b>Remas</b>, dan <b>Pramuka</b>.</li>
+                  <li>Mengembangkan keterampilan teknologi dan kepemimpinan.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 shadow-sm border-0">
+            <div class="card-header bg-success text-white d-flex align-items-center">
+              <img src="image/smplogo.png" alt="" width="32" height="32" class="me-2">
+              <button class="btn text-white flex-grow-1 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="fw-bold">2021 - 2023</span> &mdash; <span class="ms-2">SMPN 1 Nglames</span>
+              </button>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Aktif di <b>Pramuka</b> dan <b>OSIS</b>.</li>
+                  <li>Pernah menjadi <b>Ketua Kelas</b> selama 1 tahun (kelas 8).</li>
+                  <li>Berpartisipasi dalam berbagai lomba dan kegiatan sekolah.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 shadow-sm border-0">
+            <div class="card-header bg-warning text-dark d-flex align-items-center">
+              <img src="image/esdeh.png" alt="" width="32" height="32" class="me-2">
+              <button class="btn text-dark flex-grow-1 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="fw-bold">2015 - 2021</span> &mdash; <span class="ms-2">SDN Banjarsari 02</span>
+              </button>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Aktif di <b>Pramuka</b>.</li>
+                  <li>Pernah menjadi <b>Ketua Kelas</b> selama 2 tahun berturut-turut.</li>
+                  <li>Berpartisipasi dalam kegiatan ekstrakurikuler sekolah.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section id="kontak" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-kicker">Mari Terhubung</span>
+          <h2>Kontak</h2>
+          <p class="section-desc">Silakan hubungi saya untuk diskusi, kolaborasi, atau kerja sama.</p>
+        </header>
+
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <ul class="contact-list">
+              <li class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+                <div>
+                  <span class="contact-label">Alamat</span>
+                  <p class="contact-value">Jl. Nglames, Kec. Madiun, Kab. Madiun, Jawa Timur.</p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1l-2.3 1.9Z"/></svg>
+                <div>
+                  <span class="contact-label">No. Telp</span>
+                  <p class="contact-value"><a href="https://wa.me/6287846454627" target="_blank" rel="noopener">087846454627</a></p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 7a5 5 0 0 0-10 0c0 3.5 5 9 5 9s5-5.5 5-9Zm-5-2a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm-6 12a1 1 0 0 1 1 1v3h12v-3a1 1 0 1 1 2 0v3.5c0 .8-.7 1.5-1.5 1.5h-13c-.8 0-1.5-.7-1.5-1.5V18a1 1 0 0 1 1-1Z"/></svg>
+                <div>
+                  <span class="contact-label">Media Sosial</span>
+                  <div class="social-chips">
+                    <a class="social-chip" href="https://www.facebook.com/" target="_blank" rel="noopener">
+                      <img src="image/facebook.png" alt="" width="18" height="18" loading="lazy">Fadhil
+                    </a>
+                    <a class="social-chip" href="https://www.instagram.com/faith_natio14/" target="_blank" rel="noopener">
+                      <img src="image/ig.png" alt="" width="18" height="18" loading="lazy">@faith_natio14
+                    </a>
+                    <a class="social-chip" href="https://www.tiktok.com/@fadhilfaith1927?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener">
+                      <img src="image/tiktok.png" alt="" width="18" height="18" loading="lazy">@fadhilfaith1927
+                    </a>
+                    <a class="social-chip" href="https://wa.me/6287846454627" target="_blank" rel="noopener">
+                      <img src="image/wa.png" alt="" width="18" height="18" loading="lazy">WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.2-8 4.6-8-4.6V6l8 4.6L20 6v2.2Z"/></svg>
+                <div>
+                  <span class="contact-label">Email For Kerjasama</span>
+                  <p class="contact-value"><a href="index.html">Project sebelumnya</a></p>
+                </div>
+              </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div class="card mb-3 shadow-sm border-0">
-        <div class="card-header bg-success text-white d-flex align-items-center">
-          <img src="image/smplogo.png" alt="SMP" width="32" height="32" class="me-2">
-          <a class="collapsed btn text-white flex-grow-1 text-start" data-bs-toggle="collapse" href="#collapseTwo">
-            <span class="fw-bold">2021 - 2023</span> &mdash; <span class="ms-2">SMPN 1 Nglames</span>
-          </a>
-        </div>
-        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body">
-            <ul>
-              <li>Aktif di <b>Pramuka</b> dan <b>OSIS</b>.</li>
-              <li>Pernah menjadi <b>Ketua Kelas</b> selama 1 tahun (kelas 8).</li>
-              <li>Berpartisipasi dalam berbagai lomba dan kegiatan sekolah.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3 shadow-sm border-0">
-        <div class="card-header bg-warning text-dark d-flex align-items-center">
-          <img src="image/esdeh.png" alt="SD" width="32" height="32" class="me-2">
-          <a class="collapsed btn text-dark flex-grow-1 text-start" data-bs-toggle="collapse" href="#collapseThree">
-            <span class="fw-bold">2015 - 2021</span> &mdash; <span class="ms-2">SDN Banjarsari 02</span>
-          </a>
-        </div>
-        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body">
-            <ul>
-              <li>Aktif di <b>Pramuka</b>.</li>
-              <li>Pernah menjadi <b>Ketua Kelas</b> selama 2 tahun berturut-turut.</li>
-              <li>Berpartisipasi dalam kegiatan ekstrakurikuler sekolah.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
 
-  <section id="kontak">
-    <div class="row">
-        <div class="col-lg-4">
-            <b><h2>Kontak</h2></b>
-            <ol class="list-group list-group-numbered">
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Alamat</div>
-                  Jl. Nglames, Kec. Madiun, Kab. Madiun, Jawa Timur.
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">No. Telp </div>
-                  087846454627
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Akun Media Sosial</div>
-                  <div class="row sosmed">
-                      <div class="col-sm-6 d-flex align-items-start" style="gap: 5px">
-                        <img src="image/facebook.png" draggable="false">
-                        <a href="https://www.facebook.com/DianSanjaya">Fadhil</a>
-                      </div>
-                    </br>
-                      <div class="col-sm-6 d-flex align-items-start" style="gap: 5px">
-                        <img src="image/ig.png" draggable="false">
-                        <a href="https://www.instagram.com/faith_natio14/">@faith_natio14</a>
-                      </div>
-                      <div class="col-sm-6 d-flex align-items-center" style="gap: 5px">
-                        <img src="image/tiktok.png" draggable="false"> 
-                        <a href="https://www.tiktok.com/@fadhilfaith1927?is_from_webapp=1&sender_device=pc">@fadhilfaith1927</a> 
-                      </div>
-                      <div class="col-sm-6 d-flex align-items-center" style="gap: 5px">
-                        <img src="image/wa.png" draggable="false">
-                        <a href="https://wa.me/6287846454627">087846454627</a> 
-                      </div>
-                    </div>
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Email For Kerjasama</div>
-                   <a href="index.html">Project sebelumnya</a>
-                </div>
-              </li>
-            </ol>
+          <div class="col-lg-7">
+            <div class="map-card">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63280.166076493246!2d111.55880708657091!3d-7.5738461646490505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e9!4m3!3m2!1d-7.5912617!2d111.55590129999999!4m5!1s0x2e79c7fb585a947d%3A0xf2b189f11ed3a368!2sSMKN%201%20Mejayan%2C%20Jl.%20Imam%20Bonjol%20No.7%2C%20Area%20Sawah%2FKebun%2C%20Pandean%2C%20Kec.%20Mejayan%2C%20Kabupaten%20Madiun%2C%20Jawa%20Timur%2063153!3m2!1d-7.5570422!2d111.65979379999999!5e0!3m2!1sid!2sid!4v1748074762347!5m2!1sid!2sid" title="Peta lokasi SMKN 1 Mejayan" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
-          <div class="col-lg-8">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63280.166076493246!2d111.55880708657091!3d-7.5738461646490505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e9!4m3!3m2!1d-7.5912617!2d111.55590129999999!4m5!1s0x2e79c7fb585a947d%3A0xf2b189f11ed3a368!2sSMKN%201%20Mejayan%2C%20Jl.%20Imam%20Bonjol%20No.7%2C%20Area%20Sawah%2FKebun%2C%20Pandean%2C%20Kec.%20Mejayan%2C%20Kabupaten%20Madiun%2C%20Jawa%20Timur%2063153!3m2!1d-7.5570422!2d111.65979379999999!5e0!3m2!1sid!2sid!4v1748074762347!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>           
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
+  </main>
 
-  <footer class="d-flex align-items-center justify-content-center bg-secondary text-white text-center">
-    <p>Fadhil Faith @ 13</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Fadhil Faith @ 13</p>
+    </div>
   </footer>
 
+  <script src="style/bootstrap.bundle.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var menu = document.getElementById('collapsibleNavbar');
+      var navbar = document.querySelector('.site-navbar');
+      var toggler = document.querySelector('.navbar-toggler');
+
+      function closeMenuSoon() {
+        if (!menu || !menu.classList.contains('show')) return;
+        window.setTimeout(function () {
+          if (window.bootstrap && window.bootstrap.Collapse) {
+            if (menu.classList.contains('show')) {
+              window.bootstrap.Collapse.getOrCreateInstance(menu).hide();
+            }
+          } else {
+            menu.classList.remove('show');
+            if (toggler) toggler.setAttribute('aria-expanded', 'false');
+          }
+        }, 180);
+      }
+
+      // Navigasi antar-section: digulir lewat JavaScript supaya tetap bekerja
+      // walaupun perilaku anchor bawaan browser bermasalah.
+      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          var hash = link.getAttribute('href');
+          if (!hash || hash.length < 2) return;
+
+          var target = document.getElementById(hash.slice(1));
+          if (!target) return;
+
+          event.preventDefault();
+
+          var navHeight = navbar ? navbar.offsetHeight : 0;
+          // Saat menu mobile terbuka, tinggi navbar ikut membesar;
+          // kurangi tinggi panel menu supaya offset tetap mengacu navbar tertutup.
+          if (menu && menu.classList.contains('show') && menu.offsetHeight) {
+            navHeight -= menu.offsetHeight;
+          }
+          var offset = navHeight + 16;
+          var current = window.pageYOffset || document.documentElement.scrollTop || 0;
+          var top = Math.max(0, target.getBoundingClientRect().top + current - offset);
+
+          try {
+            window.scrollTo({ top: top, behavior: 'smooth' });
+          } catch (error) {
+            window.scrollTo(0, top);
+          }
+
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', hash);
+          }
+
+          closeMenuSoon();
+        });
+      });
+
+      // Cadangan jika Bootstrap JS gagal dimuat: kartu pengalaman tetap bisa dibuka.
+      if (!window.bootstrap) {
+        var buttons = document.querySelectorAll('#accordion [data-bs-toggle="collapse"]');
+        buttons.forEach(function (btn) {
+          btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            var targetSelector = btn.getAttribute('data-bs-target') || btn.getAttribute('href');
+            var target = targetSelector && document.querySelector(targetSelector);
+            if (!target) return;
+
+            var wasOpen = target.classList.contains('show');
+            document.querySelectorAll('#accordion .collapse.show').forEach(function (panel) {
+              panel.classList.remove('show');
+            });
+            buttons.forEach(function (other) {
+              other.setAttribute('aria-expanded', 'false');
+              other.classList.add('collapsed');
+            });
+
+            if (!wasOpen) {
+              target.classList.add('show');
+              btn.setAttribute('aria-expanded', 'true');
+              btn.classList.remove('collapsed');
+            }
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
