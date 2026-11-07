@@ -1,173 +1,569 @@
+/* =========================================================
+   Portofolio — Fadhil Faith
+   Tema abu-abu lama, dirapikan & dibuat responsif.
+   ========================================================= */
+
+:root {
+    --bg: #f4f4f5;
+    --surface: #ffffff;
+    --ink: #2c2f33;
+    --ink-soft: #5b6067;
+    --muted: #8b9097;
+    --line: #e3e4e6;
+    --nav: #5f6165;
+    --nav-dark: #4b4d51;
+    --footer: #3d3f43;
+
+    --radius-sm: 12px;
+    --radius-md: 16px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+
+    --shadow-sm: 0 2px 8px rgba(35, 38, 42, 0.06);
+    --shadow-md: 0 12px 28px rgba(35, 38, 42, 0.12);
+    --shadow-lg: 0 20px 45px rgba(20, 22, 25, 0.22);
+
+    --maxw: 1120px;
+    --nav-h: 68px;
+}
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--nav-h) + 16px);
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background-color: #f4f4f4;
-  color: #333;
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ---------- Navbar ---------- */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(104, 96, 96);
-  height: 70px;
-  padding: 0 20px;
-  color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(95, 97, 101, 0.97);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 14px rgba(20, 22, 25, 0.18);
 }
 
-.logo p {
-  font-size: 26px;
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: var(--maxw);
+    min-height: var(--nav-h);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus {
+    color: #e7e8ea;
 }
 
 .navigasi ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
 }
 
-.navigasi ul li a {
-  text-decoration: none;
-  color: whitesmoke;
+.nav-link {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 0.94rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.navigasi ul li a:hover {
-  color: lightgray;
-  font-style: italic;
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.16);
 }
 
-.banner img {
-  width: 150px;
-  margin-bottom: 20px;
+.nav-link.active {
+    color: var(--ink);
+    background-color: #e6e7e9;
+    border-color: #e6e7e9;
 }
 
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 40px;
+    padding: 8px 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+/* ---------- Banner ---------- */
 .banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  background-color: rgb(115, 116, 125);
-  text-align: center;
-  padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(520px, 78vh, 640px);
+    padding: clamp(48px, 8vw, 84px) 20px;
+    overflow: hidden;
+    text-align: center;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.12), transparent 45%),
+        radial-gradient(circle at 88% 82%, rgba(255, 255, 255, 0.10), transparent 45%),
+        linear-gradient(140deg, #74777c 0%, #5f6165 48%, #4b4d51 100%);
+    color: #ffffff;
 }
 
-.banner h1 span::before {
-  content: "Selamat Datang!";
-  animation: gerak 4s infinite ease-in-out;
-  color: white;
-  font-size: 40px;
+.banner-inner {
+    position: relative;
+    width: 100%;
+    max-width: 760px;
 }
 
-@keyframes gerak {
-  0% { content: "Halo!"; }
-  50% { content: "Selamat Datang!"; }
-  100% { content: "Saya Siswa SMKN 1 Mejayan"; }
+.banner-photo {
+    width: clamp(120px, 20vw, 170px);
+    height: clamp(120px, 20vw, 170px);
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 22px;
 }
 
-.banner p {
-  color: white;
-  font-size: 18px;
-  margin-top: 10px;
+.banner-greeting {
+    display: block;
+    margin-bottom: 10px;
+    color: #e9eaec;
+    font-size: clamp(0.72rem, 2.4vw, 0.82rem);
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
 
-.banner button {
-  margin-top: 30px;
-  border-radius: 8px;
-  width: 200px;
-  height: 40px;
-  border: none;
-  font-size: 16px;
-  background-color: white;
-  color: rgb(55, 61, 129);
-  cursor: pointer;
+.rotator {
+    position: relative;
+    display: block;
+    height: 1.6em;
+    white-space: nowrap;
 }
 
-.banner button:hover {
-  background-color: lightgray;
-  color: rgb(8, 8, 8);
-  font-style: italic;
+.rotator > span {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: rotator 9s infinite ease-in-out;
 }
 
-.Pendidikan, .Pengalaman, .Kontak {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: white;
+.rotator > span:nth-child(1) { animation-delay: 0s; }
+.rotator > span:nth-child(2) { animation-delay: 3s; }
+.rotator > span:nth-child(3) { animation-delay: 6s; }
+
+@keyframes rotator {
+    0%   { opacity: 0; transform: translateY(6px); }
+    4%   { opacity: 1; transform: translateY(0); }
+    28%  { opacity: 1; transform: translateY(0); }
+    33%  { opacity: 0; transform: translateY(-6px); }
+    100% { opacity: 0; transform: translateY(-6px); }
 }
 
-.Pendidikan h2, .Pengalaman h2, .Kontak h2 {
-  margin-bottom: 30px;
-  color: #333;
+.banner h1 {
+    margin-bottom: 12px;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
 }
 
-.sd, .smp, .smk, .kerja {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  margin: 10px;
-  padding: 20px;
-  background-color: #948d8d;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
+.banner-subtitle {
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(0.98rem, 2.2vw, 1.15rem);
 }
 
-.sd:hover, .smp:hover, .smk:hover, .kerja:hover {
-  background-color: #e0e0e0;
+.banner-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    background-color: #ffffff;
+    color: #42454a;
+    font-size: 0.98rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(20, 22, 25, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
-.sd img, .smp img, .smk img, .kerja img {
-  width: 100%;
-  max-height: 180px;
-  object-fit: contain;
-  margin-bottom: 10px;
+.banner-btn svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s ease;
 }
 
-.sd h3, .smp h3, .smk h3, .kerja h3 {
-  margin-bottom: 10px;
-  color: #000000;
+.banner-btn:hover,
+.banner-btn:focus {
+    background-color: #f1f2f3;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(20, 22, 25, 0.28);
 }
 
-.sosmed {
-  width: 20%;
-  display: inline-block;
-  margin: 15px;
-  padding: 20px;
-  background-color: rgb(113, 111, 119);
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  transition: background-color 0.3s ease;
+.banner-btn:hover svg {
+    transform: translateX(3px);
 }
 
-.sosmed:hover {
-  background-color: rgb(163, 158, 158);
+/* ---------- Section dasar ---------- */
+.section {
+    padding: clamp(48px, 7vw, 84px) 0;
+    background-color: var(--surface);
 }
 
-.sosmed img {
-  width: 50px;
-  margin-bottom: 10px;
+.Pengalaman {
+    background-color: #f0f1f2;
 }
 
-.sosmed a {
-  text-decoration: none;
-  color: white;
+.container {
+    width: 100%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.sosmed a h3:hover {
-  color: lightgray;
+.section-head {
+    max-width: 660px;
+    margin: 0 auto clamp(28px, 4vw, 44px);
+    text-align: center;
 }
 
+.section-kicker {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.section-head h2 {
+    margin-bottom: 10px;
+    color: var(--ink);
+    font-size: clamp(1.55rem, 3.6vw, 2.2rem);
+    font-weight: 800;
+}
+
+.section-desc {
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+}
+
+/* ---------- Kartu pendidikan & pengalaman ---------- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 30px 24px;
+    text-align: center;
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.Pengalaman .info-card {
+    background-color: #ffffff;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: #cfd1d4;
+    box-shadow: var(--shadow-md);
+}
+
+.info-card-img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    padding: 14px;
+    margin-bottom: 18px;
+    background-color: #f2f3f4;
+    border-radius: 50%;
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+    color: var(--ink);
+    font-size: clamp(1.05rem, 2vw, 1.2rem);
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.card-tag {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 4px 14px;
+    border-radius: var(--radius-pill);
+    background-color: #eceef0;
+    color: #4c5055;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.info-card p {
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    line-height: 1.65;
+}
+
+.experience-card {
+    padding: 18px 18px 28px;
+}
+
+.experience-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border-radius: var(--radius-sm);
+    background-color: #e9eaeb;
+}
+
+/* ---------- Kontak ---------- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 26px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(160deg, #64676c 0%, #4a4d52 100%);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+}
+
+.contact-card:hover,
+.contact-card:focus {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    filter: brightness(1.08);
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.contact-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.contact-platform {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.contact-value {
+    font-size: 0.98rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+/* ---------- Footer ---------- */
 .footer {
-  background-color: rgb(205, 188, 188);
-  color: rgb(83, 81, 81);
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-  margin-top: 40px;
+    padding: 26px 20px;
+    background-color: var(--footer);
+    color: rgba(255, 255, 255, 0.82);
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+}
+
+/* ---------- Fokus keyboard ---------- */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.contact-card:focus-visible,
+.banner-btn:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 991.98px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767.98px) {
+    .nav-toggle {
+        display: inline-flex;
+    }
+
+    .navigasi {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        background-color: var(--nav-dark);
+        box-shadow: 0 10px 20px rgba(20, 22, 25, 0.25);
+        transition: max-height 0.3s ease;
+    }
+
+    .navigasi.is-open {
+        max-height: 340px;
+    }
+
+    .navigasi ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        padding: 12px 20px 18px;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 12px 14px;
+    }
+
+    .banner {
+        min-height: auto;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .info-card {
+        padding: 24px 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+}
+
+/* ---------- Hormati preferensi gerak minimal ---------- */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+
+    .rotator > span {
+        opacity: 0;
+        transform: none;
+    }
+
+    .rotator > span:first-child {
+        opacity: 1;
+    }
 }
