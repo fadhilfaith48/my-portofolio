@@ -1,130 +1,253 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portofolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Portofolio Fadhil Faith Al Abrisam Dewanto, siswa RPL SMKN 1 Mejayan: pendidikan, pengalaman organisasi, dan kontak.">
+    <meta name="theme-color" content="#5f6165">
+    <link rel="icon" href="image/smk.png" type="image/png">
+    <title>Portofolio | Fadhil Faith Al Abrisam Dewanto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--navbar-->
-    <div class="navbar">
-    <div class="logo">
-        <p><b>Biodata</b></p>
-    </div>
-        <div class="navigasi">
-            <ul>
-                <li><a href="#utama">Hai</a></li>
-                <li><a href="#Pendidikan">Pendidikan</a></li>
-                <li><a href="#Pengalaman">Pengalaman</a></li>
-                <li><a href="#Kontak">Kontak</a></li>
-            </ul>
-        </div>
-    </div>
 
-    <!--Banner-->
-    <div class="banner" id="utama"> 
-        <img src="image/foto.jpg" alt="gambar progam">
-        <h1><span></span></h1>
-        <p><b>Siswa RPL di SMKN 1 Mejayan</b></p>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a class="logo" href="#utama">Biodata</a>
 
-        <a href=""><button><b>JOIN</b></button></a>
-    </div>
-    <!--Pendidikan-->
-    <div class="Pendidikan" id="Pendidikan">
-        <h2>Pendidikan</h2>
-        <div class="sd">
-            <img src="image/(Logo SD).png" alt="gmbr sd">
-            <h3>Sekolah Dasar</h3>
-            </br>
-            <p>
-                Lulusan SDN Banjarsari 02 (2015 s.d. 2020)
-                Alamat : Ds. Banjarsari, Kec. Madiun, Kab. Madiun
-            </p>
-        </div>
-    
-        <div class="smp">
-            <img src="image/smplogo.png" alt="gmbr smp">
-            <h3>Sekolah Menengah Pertama</h3>
-                </br>
-                <p>
-                Lulusan SMPN 1 Nglames (2021 s.d. 2024)
-                Alamat : Jln. Bajang, Banjarsari, Kec. Madiun, Kab. Madiun
-                </p>
-        </div>
+            <button class="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-controls="navigasi" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <div class="smk">
-            <img src="image/smk.png" alt="gmbr smk">
-            <h3>Sekolah Menengah Kejuruan</h3>
-            </br>
-            <p>
-                Bersekolah Di SMKN 1 Mejayan (2024 s.d. 2027)
-                Alamat : Jl Imam Bonjol No.7 Kec. Mejayan, Kab. Madiun
-            </p>
+            <nav class="navigasi" id="navigasi" aria-label="Navigasi utama">
+                <ul>
+                    <li><a class="nav-link" href="#utama">Beranda</a></li>
+                    <li><a class="nav-link" href="#Pendidikan">Pendidikan</a></li>
+                    <li><a class="nav-link" href="#Pengalaman">Pengalaman</a></li>
+                    <li><a class="nav-link" href="#Kontak">Kontak</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <!--Pengalaman-->
-    <div class="Pengalaman" id="Pengalaman"> 
-        <h2>Pengalaman</h2>
-        <div class="kerja">
-            <img src="image/osis.jpg" alt="gmbr sd">
-            <h3>Pengurus Osis</h3>
-            </br>
-            <p>
-                Saya adalah pengurus osis di SMKN 1 Mejayan Tahun 2024-2026
-            </p>
-        </div>
-    
-        <div class="kerja">
-            <img src="image/remas.jpg" alt="gmbr smp">
-            <h3>Pengurus Remas</h3>
-            </br>
-            <p>
-                Saya adalah pengurus Remaja Masjid di Masjid Al-Muhajirin di SMKN 1 Mejayan
-                Tahun 2024-2026
-            </p>
-        </div>
+    </header>
 
-        <div class="kerja">
-            <img src="image/pramuka.jpg" alt="gmbr smk">
-            <h3>Pramuka</h3>
-            </br>
-            <p>
-                Saya adalah anggota pramuka di SMKN 1 Mejayan Tahun 2024-2026
+    <!-- Banner -->
+    <section class="banner" id="utama">
+        <div class="banner-inner">
+            <img class="banner-photo" src="image/foto.jpg" alt="Foto Fadhil Faith Al Abrisam Dewanto" width="170" height="170">
+
+            <p class="banner-greeting">
+                <span class="visually-hidden">Halo, selamat datang. </span>
+                <span class="rotator" aria-hidden="true">
+                    <span>Halo, selamat datang</span>
+                    <span>Saya Fadhil Faith</span>
+                    <span>Terima kasih sudah mampir</span>
+                </span>
             </p>
-        </div>
-    </div>
-    <!--Kontak-->
-    <div class="Kontak" id="Kontak">
-        <h2>Kontak Person</h2>
-        <div class="sosmed">
-            <img src="image/whatsapp.png" alt="gmbr program">
-            <a href="https://wa.me/6287846454627">
-                <h3>087846454627</h3>
+
+            <h1>Fadhil Faith Al Abrisam Dewanto</h1>
+            <p class="banner-subtitle">Siswa RPL di SMKN 1 Mejayan</p>
+
+            <a class="banner-btn" href="https://www.fadhilfaith.my.id/" target="_blank" rel="noopener">
+                Lihat Portofolio
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </a>
         </div>
-        <div class="sosmed">
-            <img src="image/tiktok.png" alt="gmbr program">
-            <a href="https://www.tiktok.com/@fadhilfaith1927?is_from_webapp=1&sender_device=pc">
-                <h3>@fadhilfaith1927</h3>
-            </a>
+    </section>
+
+    <!-- Pendidikan -->
+    <section class="section Pendidikan" id="Pendidikan">
+        <div class="container">
+            <header class="section-head">
+                <span class="section-kicker">Perjalanan Belajar</span>
+                <h2>Pendidikan</h2>
+                <p class="section-desc">Jenjang pendidikan yang sudah dan sedang saya tempuh.</p>
+            </header>
+
+            <div class="card-grid">
+                <article class="info-card">
+                    <img class="info-card-img" src="image/(Logo%20SD).png" alt="Logo SDN Banjarsari 02" width="120" height="120" loading="lazy">
+                    <h3>Sekolah Dasar</h3>
+                    <span class="card-tag">2017 &ndash; 2022</span>
+                    <p>Lulusan SDN Banjarsari 02. Alamat: Ds. Banjarsari, Kec. Madiun, Kab. Madiun.</p>
+                </article>
+
+                <article class="info-card">
+                    <img class="info-card-img" src="image/smplogo.png" alt="Logo SMPN 1 Nglames" width="120" height="120" loading="lazy">
+                    <h3>Sekolah Menengah Pertama</h3>
+                    <span class="card-tag">2022 &ndash; 2024</span>
+                    <p>Lulusan SMPN 1 Nglames. Alamat: Jln. Bajang, Banjarsari, Kec. Madiun, Kab. Madiun.</p>
+                </article>
+
+                <article class="info-card">
+                    <img class="info-card-img" src="image/smk.png" alt="Logo SMKN 1 Mejayan" width="120" height="120" loading="lazy">
+                    <h3>Sekolah Menengah Kejuruan</h3>
+                    <span class="card-tag">2024 &ndash; Sekarang</span>
+                    <p>SMKN 1 Mejayan, jurusan Rekayasa Perangkat Lunak. Alamat: Jl. Imam Bonjol No. 7, Kec. Mejayan, Kab. Madiun.</p>
+                </article>
+            </div>
         </div>
-        <div class="sosmed">
-            <img src="image/instagram.png" alt="gmbr program">
-            <a href="https://www.instagram.com/faith_natio14/">
-                <h3>faith_natio14</h3>
-            </a>
+    </section>
+
+    <!-- Pengalaman -->
+    <section class="section Pengalaman" id="Pengalaman">
+        <div class="container">
+            <header class="section-head">
+                <span class="section-kicker">Di Luar Kelas</span>
+                <h2>Pengalaman</h2>
+                <p class="section-desc">Organisasi dan kegiatan yang membentuk cara saya bekerja.</p>
+            </header>
+
+            <div class="card-grid">
+                <article class="info-card experience-card">
+                    <img class="experience-img" src="image/osis.jpg" alt="Kegiatan OSIS di SMKN 1 Mejayan" width="400" height="260" loading="lazy">
+                    <h3>Pengurus OSIS</h3>
+                    <span class="card-tag">2024 &ndash; 2026</span>
+                    <p>Pengurus OSIS di SMKN 1 Mejayan, terlibat dalam perencanaan dan pelaksanaan kegiatan sekolah.</p>
+                </article>
+
+                <article class="info-card experience-card">
+                    <img class="experience-img" src="image/remas.jpg" alt="Kegiatan Remaja Masjid Al-Muhajirin" width="400" height="260" loading="lazy">
+                    <h3>Pengurus Remas</h3>
+                    <span class="card-tag">2024 &ndash; 2026</span>
+                    <p>Pengurus Remaja Masjid Al-Muhajirin di SMKN 1 Mejayan, membantu kegiatan keagamaan sekolah.</p>
+                </article>
+
+                <article class="info-card experience-card">
+                    <img class="experience-img" src="image/pramuka.jpg" alt="Kegiatan Pramuka di SMKN 1 Mejayan" width="400" height="260" loading="lazy">
+                    <h3>Pramuka</h3>
+                    <span class="card-tag">2024 &ndash; 2025</span>
+                    <p>Anggota Pramuka di SMKN 1 Mejayan, aktif dalam latihan rutin dan kegiatan kepramukaan.</p>
+                </article>
+            </div>
         </div>
-        <div class="sosmed">
-            <img src="image/twitter (1).png" alt="gmbr program">
-            <a href="https://x.com/FadhilFaith14">
-                <h3>FadhilFaith14</h3>
-            </a>
+    </section>
+
+    <!-- Kontak -->
+    <section class="section Kontak" id="Kontak">
+        <div class="container">
+            <header class="section-head">
+                <span class="section-kicker">Mari Terhubung</span>
+                <h2>Kontak Person</h2>
+                <p class="section-desc">Silakan hubungi saya lewat salah satu kanal di bawah ini.</p>
+            </header>
+
+            <div class="contact-grid">
+                <a class="contact-card" href="https://wa.me/6287846454627" target="_blank" rel="noopener">
+                    <span class="contact-icon"><img src="image/whatsapp.png" alt="" width="28" height="28" loading="lazy"></span>
+                    <span class="contact-platform">WhatsApp</span>
+                    <span class="contact-value">087846454627</span>
+                </a>
+
+                <a class="contact-card" href="https://www.tiktok.com/@fadhilfaith1927?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener">
+                    <span class="contact-icon"><img src="image/tiktok.png" alt="" width="28" height="28" loading="lazy"></span>
+                    <span class="contact-platform">TikTok</span>
+                    <span class="contact-value">@fadhilfaith1927</span>
+                </a>
+
+                <a class="contact-card" href="https://www.instagram.com/faith_natio14/" target="_blank" rel="noopener">
+                    <span class="contact-icon"><img src="image/instagram.png" alt="" width="28" height="28" loading="lazy"></span>
+                    <span class="contact-platform">Instagram</span>
+                    <span class="contact-value">@faith_natio14</span>
+                </a>
+
+                <a class="contact-card" href="https://x.com/Fadhil" target="_blank" rel="noopener">
+                    <span class="contact-icon"><img src="image/twitter%20(1).png" alt="" width="28" height="28" loading="lazy"></span>
+                    <span class="contact-platform">X / Twitter</span>
+                    <span class="contact-value">@Fadhil</span>
+                </a>
+            </div>
         </div>
-    </div>
-        <div class="flooter">
-            <h2>FADHIL@2025</h2>
-        </div>
-        
+    </section>
+
+    <footer class="footer">
+        <p>FADHIL@2025</p>
+    </footer>
+
+    <script>
+        (function () {
+            var header = document.getElementById('navbar');
+            var menu = document.getElementById('navigasi');
+            var toggle = document.querySelector('.nav-toggle');
+
+            function closeMenu() {
+                if (!menu || !toggle) return;
+                menu.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            if (toggle && menu) {
+                toggle.addEventListener('click', function () {
+                    var open = menu.classList.toggle('is-open');
+                    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                });
+
+                document.addEventListener('keydown', function (event) {
+                    if (event.key === 'Escape') closeMenu();
+                });
+            }
+
+            // Gulir halus + offset navbar, sekaligus menutup menu di HP.
+            document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    var hash = link.getAttribute('href');
+                    if (!hash || hash.length < 2) return;
+
+                    var target = document.getElementById(hash.slice(1));
+                    if (!target) return;
+
+                    event.preventDefault();
+
+                    var offset = (header ? header.offsetHeight : 0) + 16;
+                    var current = window.pageYOffset || document.documentElement.scrollTop || 0;
+                    var top = Math.max(0, target.getBoundingClientRect().top + current - offset);
+
+                    try {
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    } catch (error) {
+                        window.scrollTo(0, top);
+                    }
+
+                    if (window.history && window.history.replaceState) {
+                        window.history.replaceState(null, '', hash);
+                    }
+
+                    closeMenu();
+                });
+            });
+
+            // Tandai menu aktif saat halaman digulir.
+            var links = Array.prototype.slice.call(document.querySelectorAll('.navigasi .nav-link'));
+            var sections = links.map(function (link) {
+                return document.getElementById(link.getAttribute('href').slice(1));
+            }).filter(Boolean);
+
+            function syncActiveLink() {
+                if (!sections.length) return;
+                var marker = (header ? header.offsetHeight : 0) + 48;
+                var active = sections[0];
+
+                sections.forEach(function (section) {
+                    if (section.getBoundingClientRect().top <= marker) active = section;
+                });
+
+                var atBottom = (window.innerHeight + (window.pageYOffset || 0)) >= (document.documentElement.scrollHeight - 4);
+                if (atBottom) active = sections[sections.length - 1];
+
+                links.forEach(function (link) {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + active.id);
+                });
+            }
+
+            window.addEventListener('scroll', syncActiveLink, { passive: true });
+            window.addEventListener('resize', syncActiveLink);
+            syncActiveLink();
+        })();
+    </script>
 </body>
 </html>
